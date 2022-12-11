@@ -14,7 +14,7 @@ def solution1(commands):
         elif command.startswith("n"):
             cycle_values.append(cycle_values[-1])
 
-    score = sum([i * cycle_values[i-1] for i in range(20, 240, 40)])
+    score = sum([i * cycle_values[i - 1] for i in range(20, 240, 40)])
     return cycle_values, score
 
 
